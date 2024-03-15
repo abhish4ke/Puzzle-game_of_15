@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gameof15bg"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ResultActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Congratulations!!!"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:fontFamily="@font/pacifico"
+                android:textColor="@color/font_color"
+                />
+            <TextView
+                android:id="@+id/name_result_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:fontFamily="@font/pacifico"
+                android:textColor="@color/font_color"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You finished the game in"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:fontFamily="@font/pacifico"
+                android:textColor="@color/font_color"
+                />
+            <TextView
+                android:id="@+id/time_result_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00:00 nimutes"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:fontFamily="@font/pacifico"
+                android:textColor="@color/font_color"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Press this button to play again"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:fontFamily="@font/pacifico"
+                android:textColor="@color/font_color"
+                />
+            <Button
+                android:id="@+id/btnStartGame"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/btnbackground"
+                android:fontFamily="@font/orbitron"
+                android:text="New game"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
